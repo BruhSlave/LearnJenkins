@@ -51,7 +51,29 @@ a:active {
 .magistrature-list {
     list-style-image: url('logo.jpg');
 }
+/* Стиль для списка Магистратуры с маркерами-изображениями и уменьшенным размером */
+.magistrature-list {
+    list-style-type: none; /* Убираем стандартные маркеры */
+    padding-left: 20px; /* Добавляем отступ для маркеров */
+}
 
+.magistrature-list li {
+    position: relative;
+    padding-left: 30px; /* Отступ для изображения */
+}
+
+.magistrature-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Центрируем маркер по вертикали */
+    width: 20px; /* Ширина изображения */
+    height: 20px; /* Высота изображения */
+    background-image: url('logo.jpg'); /* Указываем путь к изображению */
+    background-size: contain; /* Масштабируем изображение по размеру */
+    background-repeat: no-repeat; /* Убираем повтор */
+}
 /* Стиль для таблицы */
 table {
     width: 100%;
