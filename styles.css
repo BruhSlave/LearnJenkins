@@ -47,10 +47,7 @@ a:active {
     font-size: 18px;
 }
 
-/* Стиль для магистратуры */
-.magistrature-list {
-    list-style-image: url('logo.jpg');
-}
+
 /* Стиль для списка Магистратуры с маркерами-изображениями и уменьшенным размером */
 .magistrature-list {
     list-style-type: none; /* Убираем стандартные маркеры */
