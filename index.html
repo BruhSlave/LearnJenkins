@@ -3,64 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Форма регистрации</title>
+    <title>Лабораторная работа №2</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="" method="post">
-        <fieldset>
-            <legend>Заполните поля</legend>
+    <h1 id="header1">Государственный Университет Морского и Речного Флота имени адмирала С.О.Макарова</h1>
 
-            <!-- Фамилия -->
-            <label for="last-name">Фамилия:</label>
-            <input type="text" id="last-name" name="last-name" required><br><br>
+    <p class="intro" style="font-size: 12px; font-family: Arial;">
+        Университет был образован 11 сентября 2012 года приказом министра транспорта России Максима Соколова...
+    </p>
 
-            <!-- Имя -->
-            <label for="first-name">Имя:</label>
-            <input type="text" id="first-name" name="first-name" required><br><br>
+    <p class="second-paragraph">
+        Университет создает курсантам и студентам все условия для реализации своих способностей...
+    </p>
 
-            <!-- Год рождения -->
-            <label for="birth-year">Год рождения (1980-2001):</label>
-            <input type="number" id="birth-year" name="birth-year" min="1980" max="2001" maxlength="4" required><br><br>
+    <h2 id="header2">Структура и органы управления</h2>
+    <ol>
+        <li>Ректорат
+            <ul>
+                <li>Ректор</li>
+                <li>Первый проректор</li>
+                <li>Проректор по учебной работе</li>
+                <li>Проректор по научной работе</li>
+                <li>Проректор по развитию филиалов</li>
+                <li>Проректор по капитальному строительству</li>
+                <li>Проректор по развитию образовательного комплекса</li>
+                <li>Помощник ректора по безопасности и международным связям</li>
+                <li>Советник по конвенционной подготовке</li>
+                <li>Помощник первого проректора по общим вопросам</li>
+            </ul>
+        </li>
+        <li>Институты
+            <ol type="1">
+                <li>Институт «Морская академия»</li>
+                <li>Институт Водного транспорта</li>
+                <li>Институт Международного транспортного менеджмента</li>
+                <li>Институт дополнительного профессионального образования</li>
+            </ol>
+        </li>
+    </ol>
 
-            <!-- Email -->
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Pasha@tech.ru"><br><br>
+    <p class="union-activity">
+        В университете осуществляет свою деятельность Первичная профсоюзная организация студентов и курсантов...
+    </p>
 
-            <!-- Выпадающий список -->
-            <label for="study-type">Тип обучения:</label>
-            <select id="study-type" name="study-type">
-                <option value="очна">Очная</option>
-                <option value="заочна">Заочная</option>
-                <option value="на дому">На дому</option>
-            </select><br><br>
+    <a href="https://gumrf.ru/sveden/document/gimn" class="link">Гимн ГУМРФ</a>
 
-            <!-- Пароль -->
-            <label for="password">Пароль:</label>
-            <input type="password" id="password" name="password" maxlength="8" required><br><br>
+    <h3>Магистратура</h3>
+    <ul class="magistrature-list">
+        <li>Документ об образовании или о квалификации</li>
+        <li>Документ государственного образца</li>
+        <li>Документ об образовании из Сколково</li>
+        <li>Документы иностранного государства</li>
+    </ul>
 
-            <!-- Логин -->
-            <label for="login">Логин:</label>
-            <input type="text" id="login" name="login" pattern="[a-z]{3}[0-9]{3}[A-Z]{2}" required 
-                   title="Логин должен содержать 3 строчных латинских буквы, 3 цифры и 2 прописные буквы."><br><br>
-
-            <!-- Переключатель: курс -->
-            <label for="course">Курс:</label>
-            <input type="radio" id="first-year" name="course" value="1" checked>
-            <label for="first-year">1 курс</label>
-            <input type="radio" id="second-year" name="course" value="2">
-            <label for="second-year">2 курс</label>
-            <input type="radio" id="third-year" name="course" value="3">
-            <label for="third-year">3 курс</label>
-            <input type="radio" id="fourth-year" name="course" value="4">
-            <label for="fourth-year">4 курс</label><br><br>
-
-            <!-- Текстовое поле -->
-            <label for="comments">Комментарий:</label><br>
-            <textarea id="comments" name="comments" rows="5" cols="45"></textarea><br><br>
-
-            <input type="submit" value="Отправить">
-        </fieldset>
-    </form>
+    <table>
+        <tr>
+            <th>Сроки</th>
+            <th>Очная форма обучения</th>
+            <th>Заочная форма обучения</th>
+        </tr>
+        <tr>
+            <td><strong>20 июня</strong></td>
+            <td><strong>6 августа</strong></td>
+            <td><strong>23 августа</strong></td>
+        </tr>
+    </table>
 </body>
 </html>
-
